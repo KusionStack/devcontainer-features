@@ -1,0 +1,42 @@
+name: "CI - Test Features"
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    strategy:
+      matrix:
+        features:
+          - kusion
+        baseImage:
+          - debian:latest
+          # the following two images are commented, since kcl now does not support ubuntu 20.10+: https://github.com/KusionStack/KCLVM/issues/111
+          # - ubuntu:latest
+          # - mcr.microsoft.com/devcontainers/base:ubuntu
+          - mcr.microsoft.com/devcontainers/base:bullseye
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: "Install latest devcontainer CLI"
+        run: npm install -g @devcontainers/cli
+
+      - name: "Generating tests for '${{ matrix.features }}' against '${{ matrix.baseImage }}'"
+        run: devcontainer features test -f ${{ matrix.features }} -i ${{ matrix.baseImage }} .
+
+  test-global:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: "Install latest devcontainer CLI"
+        run: npm install -g @devcontainers/cli
+
+      - name: "Testing global scenarios"
+        run: devcontainer features test --global-scenarios-only .

@@ -1,0 +1,25 @@
+{
+    "name": "Kusion",
+    "id": "kusion",
+    "version": "0.0.1",
+    "description": "Installs kusion tools pack and the vscode kusion and KCL extension. This feature cannot be used on Ubuntu20.10+ for now.",
+    "options": {
+        "version": {
+            "type": "string",
+            "description": "Specify a version of kusion",
+            "default": "v0.7.1"
+        }
+    },
+    "containerEnv": {
+        "PATH": "/home/vscode/.kusion/bin:/home/vscode/.kusion/kclvm/bin:${PATH}",
+        "KUSION_PATH": "/home/vscode/.kusion"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "KusionStack.kusion",
+                "kcl.kcl-vscode-extension"
+            ]
+        }
+    }
+}
