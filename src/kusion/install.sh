@@ -3,8 +3,8 @@
 set -eux
 
 # Kusion version
-VERSION=${VERSION:-"v0.8.1"}
-KUSION_URL="https://github.com/KusionStack/kusion/releases/download/${VERSION}/kusion-ubuntu.tgz"
+VERSION=${VERSION:-"0.8.1"}
+KUSION_URL="https://github.com/KusionStack/kusion/releases/download/v${VERSION}/kusion_${VERSION}_linux_amd64.tar.gz"
 KUSION_LOCATION="/home/vscode/.kusion"
 
 USERNAME="${USERNAME:-"${_REMOTE_USER:-"automatic"}"}"

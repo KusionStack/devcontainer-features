@@ -7,7 +7,7 @@
         "version": {
             "type": "string",
             "description": "Specify a version of kusion",
-            "default": "v0.8.1"
+            "default": "0.8.1"
         }
     },
     "containerEnv": {
