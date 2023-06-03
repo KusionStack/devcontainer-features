@@ -18,8 +18,6 @@ source dev-container-features-test-lib
 
 echo -e "The result of the 'kusion' command will be:\n"
 kusion
-echo -e "The result of the 'kcl' command will be:\n"
-kcl
 echo -e "\n"
 
 # Feature-specific tests
