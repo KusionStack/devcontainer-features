@@ -36,4 +36,4 @@ chown -R $USERNAME ${KUSION_LOCATION}
 chmod -R u+wrx ${KUSION_LOCATION}
 
 # check the user permission
-ls -al ${KUSION_LOCATION}/bin
+ls -al ${KUSION_LOCATION}

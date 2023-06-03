@@ -11,7 +11,7 @@
         }
     },
     "containerEnv": {
-        "PATH": "/home/vscode/.kusion/bin:/home/vscode/.kusion/kclvm/bin:${PATH}",
+        "PATH": "/home/vscode/.kusion:${PATH}",
         "KUSION_PATH": "/home/vscode/.kusion"
     },
     "customizations": {

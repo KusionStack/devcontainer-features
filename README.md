@@ -18,28 +18,25 @@ Running `kusion` inside the built container will print the help message of kusio
 
 ```bash
 $ kusion
-kusion is a cloud-native programmable technology stack, which manages the
-Kubernetes cluster by code.
-[2022-11-29T07:01:34.032Z] 
+kusion is a cloud-native programmable technology stack, which manages the Kubernetes cluster by code.
 
 Configuration Commands:
-  init        Initialize KCL file structure and base codes for a new project
-  compile     Compile KCL into YAML
-  check       检查当前目录中的 KCL 配置是否可以编译
-  ls          List all project and stack information
-  deps        Show KCL file dependency information
+  init          Initialize KCL file structure and base codes for a new project
+  compile       Compile KCL into YAML
+  check         Check if KCL configurations in current directory ok to compile
+  ls            List all project and stack information
+  deps          Show KCL file dependency information
 
-Runtime Commands:
-  preview     Preview a series of resource changes within the stack
-  apply       Apply a configuration stack to resource(s) by work directory
-  destroy     Destroy a configuration stack to resource(s) by work directory
+RuntimeMap Commands:
+  preview       Preview a series of resource changes within the stack
+  apply         Apply a configuration stack to resource(s) by work directory
+  destroy       Destroy a configuration stack to resource(s) by work directory
 
 Other Commands:
-  env         Print Kusion environment information
-  version     Print the kusion version info
+  completion    Generate the autocompletion script for the specified shell
+  env           Print Kusion environment information
+  version       Print the kusion version info
 
 Usage:
   kusion [flags] [options]
-
-Use "kusion <command> --help" for more information about a given command.
 ```
