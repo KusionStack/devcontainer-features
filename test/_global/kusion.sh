@@ -27,7 +27,7 @@ echo -e "\n"
 check "check kusion version produces version info" kusion version | grep 'releaseVersion: v0.8.1'
 check "check PATH env is set properly" echo ${PATH} | grep '.kusion'
 check "check KUSION_PATH env is set properly" echo ${KUSION_PATH} | grep '.kusion'
-check "check kcl-language-server is installed" which kcl-language-server | grep '.kusion'
+check "check kcl-language-server is installed" which kcl-language-server | grep '.kusion/kclvm/bin'
 
 # Report result
 # If any of the checks above exited with a non-zero exit code, the test will fail.
