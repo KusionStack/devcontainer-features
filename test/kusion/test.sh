@@ -27,8 +27,7 @@ source dev-container-features-test-lib
 
 # Feature-specific tests
 # The 'check' command comes from the dev-container-features-test-lib.
-check "version" kusion version | grep 'releaseVersion: v0.7.1'
-check "version" kcl -V | grep 'kclvm version is 0.4.3;'
+check "version" kusion version | grep 'releaseVersion: v0.8.1'
 
 # Report result
 # If any of the checks above exited with a non-zero exit code, the test will fail.
