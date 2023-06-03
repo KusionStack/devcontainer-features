@@ -24,8 +24,7 @@ echo -e "\n"
 
 # Feature-specific tests
 # The 'check' command comes from the dev-container-features-test-lib.
-check "check kusion version produces version info" kusion version | grep 'releaseVersion: v0.7.1'
-check "check kcl -V produces version info" kcl -V | grep 'kclvm version is 0.4.3'
+check "check kusion version produces version info" kusion version | grep 'releaseVersion: v0.8.1'
 check "check PATH env is set properly" echo ${PATH} | grep '.kusion'
 check "check KUSION_PATH env is set properly" echo ${KUSION_PATH} | grep '.kusion'
 
