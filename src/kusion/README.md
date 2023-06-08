@@ -17,6 +17,13 @@ Installs kusion tools pack and the vscode kusion and KCL extension. This feature
 |-----|-----|-----|-----|
 | version | Specify a version of kusion | string | 0.8.1 |
 
+## Customizations
+
+### VS Code Extensions
+
+- `KusionStack.kusion`
+- `kcl.kcl-vscode-extension`
+
 
 
 ---
