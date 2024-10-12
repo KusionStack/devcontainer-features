@@ -1,4 +1,6 @@
 # Dev Container Features for Kusion
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FKusionStack%2Fdevcontainer-features.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FKusionStack%2Fdevcontainer-features?ref=badge_shield)
+
 
 This repo now provides kusion feature for devcontainers.
 
@@ -40,3 +42,6 @@ Other Commands:
 Usage:
   kusion [flags] [options]
 ```
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FKusionStack%2Fdevcontainer-features.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FKusionStack%2Fdevcontainer-features?ref=badge_large)
